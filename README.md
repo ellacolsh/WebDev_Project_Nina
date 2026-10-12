@@ -1,2 +1,2 @@
 # WebDev_Project_Nina
-This website will enable you to learn how to create unique hairstyles and also provide inspirational hairstyles for any occasion. test. test 2
+This website will enable you to learn how to create unique hairstyles and also provide inspirational hairstyles for any occasion. test. test 2. Test 3
