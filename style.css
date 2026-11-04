@@ -1,87 +1,109 @@
 
-        h1 {
-            color: #be11be;
-            text-align: center;
-            font-family: 'Georgia', serif;
-
-        }
-        h2 {
-            color: #be11be;
-            text-align: center;
-            font-family: 'Georgia', serif;
-
-        }
-        h3 {
-            color: #fdfafd;
-            text-align: center;
-            font-family: 'Georgia', serif;
-
-        }
-        p {
-            color: #fdfafd;
-            text-align: center;
-            font-family: 'Georgia', serif;
-
-        }
-        ul {
-            color: #fdfafd;
-            text-align: left;
-            font-family: 'Georgia', serif;
-
-        }
-        body {
-            background-color: #f3cde7;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        nav {
-background-color: #a80a88;
-text-align: center;
-padding: 15px;
+body {
+    background-color: #f3cde7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-nav a {
-color: white;
-text-decoration: none;
-font-family: Arial, sans-serif;
-font-size: 18px;
-margin: 0 20px;
-}
-nav a:hover {
-color: #8b3a62;
-}
-ol {
-background-color: white;
-padding: 20px;
-margin: 20px;
-border-radius: 10px;
-box-shadow: 0 4px 8px lightgray;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
-color: #555;
-line-height: 1.5;
-}
-.card img{
-    width: 200px;
-    border-radius: 10px;
-    height:200px;
-    object-fit: cover;
 
+h1, h2 {
+    color: #be11be;
+    text-align: center;
+    font-family: 'Georgia', serif;
 }
-.banner-image {
-    width: 100%;
-    height:300px;
-    display: block;
+
+h3, p {
+    color: #4a154b;
+    text-align: center;
+    font-family: 'Georgia', serif;
 }
+
+ul {
+    color: #4a154b;
+    text-align: left;
+    font-family: 'Georgia', serif;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+/* class selector*/
 .image-container {
-text-align: center;
+    text-align: center;
+    margin: 20px auto;
 }
+
+/* descendant selector*/
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 0 15px;
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Pseudo-Class selector*/
+nav a:hover {
+    background-color: #8b3a62;
+    color: #ffffff;
+}
+
+#contact {
+    /* box model properties */
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    padding: 25px;
+    margin: 30px auto;
+    border: 3px solid #be11be;
+    
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    background-color: #a80a88;
+    text-align: center;
+    padding: 15px;
+}
+
+ol {
+    background-color: white;
+    padding: 20px 40px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px lightgray;
+    font-family: Georgia, serif;
+    color: #555;
+    line-height: 1.5;
+}
+
 .gallery {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 90px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
+
 .gallery img {
-width: 100%;
-height: 250px;
-object-fit: cover;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* task 3 background image to about page*/
+body.about-page {
+    background-image: linear-gradient(rgba(243, 205, 231, 0.85), rgba(243, 205, 231, 0.85)), 
+                      url('pexels-ketut-subiyanto-4584413.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
