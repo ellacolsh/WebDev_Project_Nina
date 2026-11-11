@@ -1,4 +1,3 @@
-
 body {
     background-color: #f3cde7;
     font-family: Arial, sans-serif;
@@ -6,34 +5,32 @@ body {
     padding: 0;
 }
 
+h1, h2, h3, p, ul, ol {
+    font-family: Arial, sans-serif;
+}
+
 h1, h2 {
     color: #be11be;
     text-align: center;
-    font-family: 'Georgia', serif;
 }
 
 h3, p {
     color: #4a154b;
     text-align: center;
-    font-family: 'Georgia', serif;
 }
 
 ul {
     color: #4a154b;
     text-align: left;
-    font-family: 'Georgia', serif;
     max-width: 500px;
     margin: 0 auto;
 }
 
-
-/* class selector*/
 .image-container {
     text-align: center;
     margin: 20px auto;
 }
 
-/* descendant selector*/
 nav a {
     color: white;
     text-decoration: none;
@@ -46,24 +43,27 @@ nav a {
     transition: background-color 0.3s ease;
 }
 
-/* Pseudo-Class selector*/
 nav a:hover {
     background-color: #8b3a62;
     color: #ffffff;
 }
 
 #contact {
-    /* box model properties */
     width: 80%;
     max-width: 500px;
     height: auto;
     padding: 25px;
     margin: 30px auto;
     border: 3px solid #be11be;
-    
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact a {
+    color: #be11be;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 nav {
@@ -79,7 +79,6 @@ ol {
     max-width: 600px;
     border-radius: 10px;
     box-shadow: 0 4px 8px lightgray;
-    font-family: Georgia, serif;
     color: #555;
     line-height: 1.5;
 }
@@ -98,7 +97,6 @@ ol {
     border-radius: 8px;
 }
 
-/* task 3 background image to about page*/
 body.about-page {
     background-image: linear-gradient(rgba(243, 205, 231, 0.85), rgba(243, 205, 231, 0.85)), 
                       url('pexels-ketut-subiyanto-4584413.jpg');
