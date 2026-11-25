@@ -1,12 +1,9 @@
+
 body {
     background-color: #f3cde7;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-h1, h2, h3, p, ul, ol {
-    font-family: Arial, sans-serif;
 }
 
 h1, h2 {
@@ -31,18 +28,31 @@ ul {
     margin: 20px auto;
 }
 
+.image-container img {
+    max-width: 90%;
+    height: auto;
+}
+
+/* Task 1: Flexbox for layout structuring */
+nav {
+    background-color: #a80a88;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Task 1: CSS transition on links */
 nav a {
     color: white;
     text-decoration: none;
-    font-family: Arial, sans-serif;
     font-size: 18px;
-    margin: 0 15px;
     padding: 8px 16px;
-    display: inline-block;
     border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
+/* Task 1: Hover effect on links */
 nav a:hover {
     background-color: #8b3a62;
     color: #ffffff;
@@ -51,7 +61,6 @@ nav a:hover {
 #contact {
     width: 80%;
     max-width: 500px;
-    height: auto;
     padding: 25px;
     margin: 30px auto;
     border: 3px solid #be11be;
@@ -66,16 +75,11 @@ nav a:hover {
     text-decoration: underline;
 }
 
-nav {
-    background-color: #a80a88;
-    text-align: center;
-    padding: 15px;
-}
-
 ol {
     background-color: white;
     padding: 20px 40px;
     margin: 20px auto;
+    width: 80%;
     max-width: 600px;
     border-radius: 10px;
     box-shadow: 0 4px 8px lightgray;
@@ -104,4 +108,34 @@ body.about-page {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+}
+
+/* ==========================================
+   Task 2: Responsive Media Queries
+   ========================================== */
+
+/* Mobile devices (width < 600px) */
+@media (max-width: 599px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablets (width between 600px and 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop screens (width > 1024px) */
+@media (min-width: 1025px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
