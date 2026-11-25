@@ -33,7 +33,7 @@ ul {
     height: auto;
 }
 
-/* Task 1: Flexbox for layout structuring */
+/* Week 11: Flexbox for layout structuring */
 nav {
     background-color: #a80a88;
     padding: 15px;
@@ -42,7 +42,7 @@ nav {
     gap: 15px;
 }
 
-/* Task 1: CSS transition on links */
+/* Week 11: CSS transition on links */
 nav a {
     color: white;
     text-decoration: none;
@@ -52,7 +52,7 @@ nav a {
     transition: background-color 0.3s ease;
 }
 
-/* Task 1: Hover effect on links */
+/* Week 11: Hover effect on links */
 nav a:hover {
     background-color: #8b3a62;
     color: #ffffff;
@@ -109,10 +109,6 @@ body.about-page {
     background-position: center;
     background-attachment: fixed;
 }
-
-/* ==========================================
-   Task 2: Responsive Media Queries
-   ========================================== */
 
 /* Mobile devices (width < 600px) */
 @media (max-width: 599px) {
